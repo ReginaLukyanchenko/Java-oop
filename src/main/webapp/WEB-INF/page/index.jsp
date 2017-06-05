@@ -15,13 +15,14 @@
     <label> Input password : </label>
     <input type="password" class="inputInfo" name="password" placeholder="Password"/></br>
     <input type="submit" class="submitation" name="command" value="Login"/></br>
+    <br>
+    <button id="showCom">Показати коментарі</button>
+    <button id="hideCom" hidden>Скрити коментарі</button>
+    </br>
   </form>
 </div>
 <div class="container"hidden>
   <br method="post" action="registrationServlet" class="form">
-    <br>
-    <button id="showCom">Показати коментарі</button>
-    </br>
     <h2 class="formHeading" >Registration</h2></br>
     <label> Input name :       </label>
     <input type="text" class="inputInfo" name="name" placeholder="Name"/></br>
@@ -38,6 +39,11 @@
               $(".comments").show();
               $('#hideCom').show();
               $('#showCom').hide();
+          });
+          $('#hideCom').click( function(){
+              $(".comments").hide();
+              $('#hideCom').hide();
+              $('#showCom').show();
           });
   </script>
 </section>
