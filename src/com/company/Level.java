@@ -5,12 +5,15 @@ public class Level {
     public boolean status;
 
     public int getNumber() {
-         return 0;
+         return number;
+    }
+    public void setNumber(int number){
+        this.number = number;
     }
     public boolean getStatus() {
-        return true;
+        return status;
     }
-    public void changeStatus() {
-
+    public void setStatus() {
+        this.status = true;
     }
 }
