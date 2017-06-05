@@ -16,36 +16,34 @@
     <input type="password" class="inputInfo" name="password" placeholder="Password"/></br>
     <input type="submit" class="submitation" name="command" value="Login"/></br>
     <br>
-    <button id="showCom">Показати коментарі</button>
-    <button id="hideCom" hidden>Скрити коментарі</button>
+      <div class="spoil">
+          <div class="smallfont"><input type="button" value="Registration";
+                                        class="input-button" onclick="if
+                                        (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '')
+                                        { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = '';
+                                        this.innerText = ''; this.value = 'not show'; }
+                                        else
+                                            { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none';
+                                        this.innerText = ''; this.value = 'Registration'; }"/>
+          </div><div class="alt2"><div style="display: none; text-align:center;">
+          <div class="container">
+              <br method="post" action="registrationServlet" class="form">
+              <h2 class="formHeading" >Registration</h2></br>
+              <label> Input name :       </label>
+              <input type="text" class="inputInfo" name="name" placeholder="Name"/></br>
+              <label> Input login :        </label>
+              <input type="text" class="inputInfo" name="login" placeholder="Login"/></br>
+              <label> Input password : </label>
+              <input type="password" class="inputInfo" name="password" placeholder="Password"/></br>
+              <input type="submit" class="submitation" name="command" value="Register"/></br>
+  </form>
+</div>
+      </div>
+      </div>
+      </div>
     </br>
   </form>
 </div>
-<div class="container"hidden>
-  <br method="post" action="registrationServlet" class="form">
-    <h2 class="formHeading" >Registration</h2></br>
-    <label> Input name :       </label>
-    <input type="text" class="inputInfo" name="name" placeholder="Name"/></br>
-    <label> Input login :        </label>
-    <input type="text" class="inputInfo" name="login" placeholder="Login"/></br>
-    <label> Input password : </label>
-    <input type="password" class="inputInfo" name="password" placeholder="Password"/></br>
-    <input type="submit" class="submitation" name="command" value="Register"/></br>
-  </form>
-</div>
-  <script>
-      $(document).ready(function() {
-          $('#showCom').click( function(){
-              $(".comments").show();
-              $('#hideCom').show();
-              $('#showCom').hide();
-          });
-          $('#hideCom').click( function(){
-              $(".comments").hide();
-              $('#hideCom').hide();
-              $('#showCom').show();
-          });
-  </script>
 </section>
 </body>
 </html>
