@@ -38,12 +38,19 @@
               <input type="submit" class="submitation" name="command" value="Register"/></br>
   </form>
 </div>
-      </div>
-      </div>
-      </div>
-    </br>
-  </form>
-</div>
+  <script>
+      $(document).ready(function() {
+          $('#showCom').click( function(){
+              $(".comments").show();
+              $('#hideCom').show();
+              $('#showCom').hide();
+          });
+          $('#hideCom').click( function(){
+              $(".comments").hide();
+              $('#hideCom').hide();
+              $('#showCom').show();
+          });
+  </script>
 </section>
 </body>
 </html>
