@@ -15,7 +15,7 @@ public class Profile {
         this.login = login;
         this.password = password;
         this.player.setScore(0);
-        this.player.setRoomNumber(1);
+        this.player.setCurrentRoomNumber(1);
     }
     public String getName()
     {

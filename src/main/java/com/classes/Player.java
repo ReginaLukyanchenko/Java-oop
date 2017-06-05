@@ -2,7 +2,7 @@ package main.java.com.classes;
 
 public class Player {
     public int score;
-    public int roomNumber;
+    public int currentRoomNumber;
 
     public int getScore()
     {
@@ -16,11 +16,11 @@ public class Player {
         this.score+=score;
     }
 
-    public int getRoomNumber() {
-        return roomNumber;
+    public int getCurrentRoomNumber() {
+        return currentRoomNumber;
     }
 
-    public void setRoomNumber(int roomNumber) {
-        this.roomNumber = roomNumber;
+    public void setCurrentRoomNumber(int roomNumber) {
+        this.currentRoomNumber = roomNumber;
     }
 }
