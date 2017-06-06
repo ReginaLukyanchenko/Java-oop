@@ -2,7 +2,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Quest room : Main menu</title>
+    <title>Main menu</title>
     <link href="resource/css/menu.css" rel="stylesheet" >
 </head>
 <body>
