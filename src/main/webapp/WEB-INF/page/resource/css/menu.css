@@ -1,0 +1,14 @@
+body
+{
+    background: url(/resource/image/menu.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.container
+{
+    width: 300px;
+    text-align:center;
+    vertical-align: middle;
+    position: absolute;
+    right: 41%;
+    bottom: 13%;
+}
