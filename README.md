@@ -15,4 +15,4 @@ At the end of the game, the player will be shown a total score and his rating am
 
 
 
-![Alt text](https://pp.userapi.com/c836433/v836433660/2cb15/U6GkXbzEc2w.jpg)
+![UML]blob:https://web.telegram.org/45725ce9-00ef-4033-a9ef-ff777bec019f 
