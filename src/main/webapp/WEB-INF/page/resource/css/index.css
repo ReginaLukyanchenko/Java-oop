@@ -14,7 +14,7 @@ body
     border: solid 1px darkred;
     border-radius: 4px;
 }
-.sections
+.sc
 {
     width: 300px;
     border: solid 0px red;
@@ -37,3 +37,19 @@ body
     border: solid 1px greenyellow;
     border-radius: 4px;
 }
+
+width: 100%;
+text-align: center;
+background-color: #FF6A12;
+border-radius:10px;
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+border:1px solid #ccc;
+font-weight: bolder;
+color:#fff;
+margin:0 auto;
+padding:0px;
+}
+.spoil {}
+.smallfont {}
+.alt2 {}
