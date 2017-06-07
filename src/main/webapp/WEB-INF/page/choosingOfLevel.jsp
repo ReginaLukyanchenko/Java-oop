@@ -9,12 +9,18 @@
 <div class="wrap">
     <div class="button">
         <header>
-            <table>
+            <table width="20%" align="left">
                 <tr>
-                    <td align="left"><a href="menu.jsp">Back to menu</a></td>
-                    <td align="center"><label for="slide-1">1-st level</label></td>
-                    <td align="center"><label for="slide-2">2-nd level</label></td>
-                    <td align="center"><label for="slide-3">3-rd level</label></td>
+                    <td><a href="menu.jsp">Back to menu</a></td>
+                </tr>
+            </table>
+            <table width="80%" align="center">
+                <tr align="center">
+                    <td>
+                        <label for="slide-1">1-st level</label>
+                        <label for="slide-2">2-nd level</label>
+                        <label for="slide-3">3-rd level</label>
+                    </td>
                 </tr>
             </table>
         </header>

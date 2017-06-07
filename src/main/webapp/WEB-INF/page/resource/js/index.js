@@ -1,6 +1,4 @@
-/**
- * Created by Regina on 07.06.2017.
- */
+
 $("#exitButton").click(function (e) {
     $.post("/exitSession", function (data) {
         window.location.href = "/registration.html";
