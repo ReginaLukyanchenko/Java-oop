@@ -1,7 +1,7 @@
-package main.java.com.classes;
+package com.classes.game;
 
 public class Rating {
-    public void showRating(String[] name, String[] surname, int[] score) {
+    public void showRating(String[] name,  int[] score) {
 
     }
 }

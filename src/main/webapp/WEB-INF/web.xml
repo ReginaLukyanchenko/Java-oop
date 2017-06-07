@@ -3,4 +3,45 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>com.servlet.loginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>registrationServlet</servlet-name>
+        <servlet-class>com.servlet.registrationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registrationServlet</servlet-name>
+        <url-pattern>/registrationServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>NewGameServlet</servlet-name>
+        <servlet-class>com.servlet.NewGameServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewGameServlet</servlet-name>
+        <url-pattern>/newGame</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ExitServlet</servlet-name>
+        <servlet-class>com.servlet.ExitServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ExitServlet</servlet-name>
+        <url-pattern>/exit</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>StatsServlet</servlet-name>
+        <servlet-class>com.servlet.StatsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StatsServlet</servlet-name>
+        <url-pattern>/stats</url-pattern>
+    </servlet-mapping>
 </web-app>

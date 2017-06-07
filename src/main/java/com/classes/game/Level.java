@@ -1,4 +1,4 @@
-package main.java.com.classes;
+package com.classes.game;
 
 public class Level {
     public int number;

@@ -17,16 +17,16 @@
              alt="exit" usemap="#exit">
     </div>
     <p><map name="newGame">
-           <area shape="rect" coords="0,0,1000,400" href="new.html" alt="New game">
+           <area shape="rect" coords="0,0,1000,400" href="http://localhost:8080/newGame" alt="New game">
        </map>
        <map name="continue">
            <area shape="rect" coords="0,0,1000,400" href="cont.html" alt="Continue">
        </map>
        <map name="stats">
-           <area shape="rect" coords="0,0,1000,400" href="stats.html" alt="Stats">
+           <area shape="rect" coords="0,0,1000,400" href="http://localhost:8080/stats" alt="Stats">
        </map>
        <map name="exit">
-           <area shape="rect" coords="0,0,1000,400" href="exit.html" alt="Exit">
+           <area shape="rect" coords="0,0,1000,400" href="http://localhost:8080/exit" alt="Exit">
        </map>
     </p>
 </body>

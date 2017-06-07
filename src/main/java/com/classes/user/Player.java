@@ -1,4 +1,4 @@
-package main.java.com.classes;
+package com.classes.user;
 
 public class Player {
     public int score;
