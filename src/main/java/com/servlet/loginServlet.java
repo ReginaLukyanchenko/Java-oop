@@ -32,19 +32,22 @@ public class loginServlet extends HttpServlet {
             HttpSession session = request.getSession(true);
             Object login1 = session.getAttribute("login");
             if (login1!=null) {
-                getServletContext().getRequestDispatcher("/main.jsp").forward(request,response);
+                getServletContext().getRequestDispatcher("/index.jsp").forward(request,response);
                 return;
             }
             String login = request.getParameter("login");
             String password = request.getParameter("password");
             UserDao dao = new UserDaoImpl();
-              User select = dao.select(login, password);
+            User select = dao.select(login, password);
         if (select!=null) {
             request.getSession().setAttribute("login", login);
             getServletConfig().getServletContext()
                     .getRequestDispatcher("/menu.jsp")
                     .forward(request, response);
                     }
+            else{
+            getServletContext().getRequestDispatcher("/index.jsp").forward(request,response);
+        }
 
     } catch (Exception e) {
         e.printStackTrace();

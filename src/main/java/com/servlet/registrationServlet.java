@@ -40,19 +40,28 @@ public class registrationServlet extends HttpServlet {
             String name = request.getParameter("name");
 
             UserDao dao = new UserDaoImpl();
-            boolean insert = dao.insert(name, login, password);
             PrintWriter out = response.getWriter();
-            response.setContentType("text/html");
-            if (insert) {
+            if (login!=""&password!=""&&name!="")
+            {
+                boolean insert = dao.insert(name, login, password);
 
-                session.setAttribute("login", login);
-                out.write("success");
-                getServletContext().getRequestDispatcher("/menu.jsp").forward(request,response);
+                response.setContentType("text/html");
+                if (insert) {
+
+                    session.setAttribute("login", login);
+                    out.write("success");
+                    getServletContext().getRequestDispatcher("/menu.jsp").forward(request,response);
+                } else {
+                    out.write("failed");
+                    getServletContext().getRequestDispatcher("/index.jsp").forward(request,response);
+
+                }
             } else {
                 out.write("failed");
                 getServletContext().getRequestDispatcher("/index.jsp").forward(request,response);
 
             }
+
 
         } catch (Exception e) {
             e.printStackTrace();
