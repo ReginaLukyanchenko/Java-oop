@@ -1,6 +1,6 @@
 # Project : quest room
 
-Team :  
+## Team ##  
 1. Alexandr Kharytonchyk ( ledoff.sky@ukr.net )
 2. Regina Lukyanchenko ( lukyanchek.regina@gmail.com )
 3. Maksim Galeta ( gm199716@gmail.com )
@@ -14,5 +14,5 @@ It will be implemented several levels (different rooms) with their own puzzles. 
 At the end of the game, the player will be shown a total score and his rating among the other players.
 
 
-
-![Alt text](https://pp.userapi.com/c836433/v836433660/2cb15/U6GkXbzEc2w.jpg)
+## UML-diagram ##
+![UML](https://github.com/ReginaLukyanchenko/Java-oop/blob/master/photo5316684005506131960.jpg) 
